@@ -1,3 +1,17 @@
-<p>
-  todo-search works!
-</p>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <input id="two" class="form-control" [(ngModel)]="search" type="text" 
+        placeholder="Search" aria-label="Search" (keyup.enter)="enterSearch()">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-top: 18px;">
+      <div class="row justify-content-center">
+        <ul>
+          <li *ngFor="let it of searchList">{{it.name}}</li>
+        </ul>
+        </div>
+        </div>

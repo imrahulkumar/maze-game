@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoSearchComponent implements OnInit {
 
+  search:any;
+  searchList:any =[];
   constructor() { }
 
   ngOnInit() {
   }
-
+  enterSearch(){
+   this.searchList.push({name:this.search});
+   this.search = "";
+  }
 }
